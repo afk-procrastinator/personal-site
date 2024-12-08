@@ -1,0 +1,1 @@
+<command>curl -o public/world-110m.json https://raw.githubusercontent.com/deldersveld/topojson/master/world-110m.json</command>
