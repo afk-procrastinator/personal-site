@@ -13,7 +13,7 @@ const MapVisualization: React.FC = () => {
   useEffect(() => {
     if (!mapLoaded) return;
 
-    const rotationSpeed = 0.5;
+    const rotationSpeed = 0.3;
     const interactionTimeout = 2000;
 
     const animate = () => {

@@ -13,7 +13,7 @@ type TechnicalSkillsType = {
 
 const technicalSkills: TechnicalSkillsType = {
   'Technical': {
-    'Python': 85,
+    'Python': 90,
     'JavaScript': 70,
     'HTML/CSS': 90,
     'Docker': 60,
@@ -22,7 +22,7 @@ const technicalSkills: TechnicalSkillsType = {
   },
   'Software': {
     'Excel': 90,
-    'GIS': 80,
+    'GIS': 60,
     'Microsoft Office Suite': 70,
     'Adobe Suite': 85,
     'Swoogo': 90,

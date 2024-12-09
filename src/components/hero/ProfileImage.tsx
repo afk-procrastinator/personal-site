@@ -7,7 +7,7 @@ const ProfileImage: React.FC = () => {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-      className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-xl mx-auto aspect-square"
+      className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-xl mx-auto"
     >
       <style>
         {`

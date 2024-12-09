@@ -12,7 +12,7 @@ interface TooltipProps {
 const Tooltip: React.FC<TooltipProps> = ({ children, text }) => (
   <div className="group relative">
     {children}
-    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 px-3 py-2 bg-ctp-surface0 text-ctp-text rounded-lg text-sm font-medium opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 whitespace-nowrap shadow-lg">
+    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 px-3 py-2 bg-ctp-surface0 text-ctp-text rounded-lg text-sm font-medium opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 whitespace-nowrap shadow-lg z-50">
       <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-ctp-surface0 rotate-45" />
       {text}
     </div>
