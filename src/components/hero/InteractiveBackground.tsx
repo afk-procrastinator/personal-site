@@ -228,11 +228,9 @@ const InteractiveBackground: React.FC = () => {
     };
 
     const handleMouseMove = (event: MouseEvent) => {
-      console.log('Mouse move event triggered'); // Debug log
       const rect = canvas.getBoundingClientRect();
       const newX = event.clientX - rect.left;
       const newY = event.clientY - rect.top;
-      console.log('New mouse position:', { x: newX, y: newY }); // Debug log
       
       mouseRef.current = {
         x: newX,
