@@ -14,7 +14,7 @@ const ProfileImage: React.FC = () => {
       <div className="relative bg-gradient-to-r from-ctp-surface0 to-ctp-surface1 rounded-[60px] p-1.5 backdrop-blur-xl shadow-2xl">
         <div className="absolute inset-0 bg-gradient-to-r from-ctp-blue to-ctp-sapphire rounded-[60px] opacity-10" />
         <img
-          src="/profile.jpg"
+          src="/profile.png"
           alt="Spencer Michaels"
           className="w-full h-full object-cover rounded-[60px] shadow-inner"
         />

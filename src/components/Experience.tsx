@@ -201,7 +201,20 @@ const additionalActivities = [
           title: "Freelance Translator",
           role: "Translator",
           period: "2020 - 2023",
-          description: "Translated Russian news articles and reports for the <a href=\"https://bearr.org/\">BEARR Trust</a>, a UK-based think tank focusing on Russian and Eurasian affairs."
+          description: (
+            <>
+              Translated Russian news articles and reports for the{' '}
+              <a 
+                href="https://bearr.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ctp-blue hover:text-ctp-sapphire transition-colors"
+              >
+                BEARR Trust
+              </a>
+              , a UK-based think tank focusing on Russian and Eurasian affairs.
+            </>
+          )
         }
     ]   
   }
