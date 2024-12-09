@@ -7,7 +7,7 @@ const ProfileImage: React.FC = () => {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-      className="relative w-full max-w-2xl mx-auto aspect-square"
+      className="relative w-full max-w-xl mx-auto aspect-square"
     >
       <div className="absolute inset-0 bg-gradient-to-r from-ctp-blue via-ctp-sapphire to-ctp-sky rounded-[60px] rotate-6 blur-2xl opacity-30 animate-pulse" />
       <div className="absolute inset-0 bg-gradient-to-r from-ctp-sky via-ctp-sapphire to-ctp-blue rounded-[60px] -rotate-6 blur-2xl opacity-30 animate-pulse delay-75" />

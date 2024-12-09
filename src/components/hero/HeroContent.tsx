@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Linkedin, Github } from 'lucide-react';
+import { FileText, Linkedin, Github, BookOpen } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from 'react-router-dom';
 
-const HeroContent: React.FC = () => {
+const HeroContent = () => {
   return (
     <div className="text-left max-w-3xl">
       <div className="text-5xl md:text-7xl font-bold text-ctp-text mb-8 relative">
@@ -51,7 +52,7 @@ const HeroContent: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.3, duration: 0.5 }}
-        className="flex gap-6"
+        className="flex gap-6 flex-wrap"
       >
         <a
           href="/resume.pdf"
@@ -63,6 +64,16 @@ const HeroContent: React.FC = () => {
           <FileText className="w-6 h-6 text-ctp-base" />
           <span className="text-base font-medium text-ctp-base">Resume</span>
         </a>
+
+        <Link
+          to="/bookshelf"
+          className="group relative inline-flex items-center gap-3 px-8 py-4 bg-ctp-mauve rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-ctp-mauve/25"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-ctp-mauve/0 via-white/25 to-ctp-mauve/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
+          <BookOpen className="w-6 h-6 text-ctp-base" />
+          <span className="text-base font-medium text-ctp-base">Bookshelf</span>
+        </Link>
+
         <a
           href="https://linkedin.com/in/spencer-michaels/"
           target="_blank"
@@ -73,6 +84,7 @@ const HeroContent: React.FC = () => {
           <Linkedin className="w-6 h-6 text-ctp-base" />
           <span className="text-base font-medium text-ctp-base">LinkedIn</span>
         </a>
+
         <a
           href="https://github.com/afk-procrastinator"
           target="_blank"
