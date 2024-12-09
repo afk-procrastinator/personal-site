@@ -7,6 +7,7 @@ import Expertise from './components/Expertise';
 import Skills from './components/Skills';
 import MapVisualization from './components/MapVisualization';
 import BlogPost from './components/BlogPost';
+import Footer from './components/Footer';
 
 function HomePage() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
