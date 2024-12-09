@@ -8,7 +8,8 @@ import {
   BookOpen, 
   Users, 
   Newspaper, 
-  Globe 
+  Globe,
+  Calendar
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -172,23 +173,6 @@ const additionalActivities = [
     ]
   },
   {
-    category: "Projects",
-    items: [
-      {
-        title: "Independent Research",
-        role: "Lead Researcher",
-        period: "2023",
-        description: "Conducted independent research on AI governance frameworks and their implications for democratic institutions."
-      },
-      {
-        title: "Photography Portfolio",
-        role: "Photographer",
-        period: "2021 — Present",
-        description: "Documented cultural events and architectural landmarks across Russia and Eastern Europe."
-      }
-    ]
-  },
-  {
     category: "Freelance",
     items: [
       {
@@ -217,6 +201,36 @@ const additionalActivities = [
           )
         }
     ]   
+  },
+  {
+    category: "Awards",
+    items: [
+      {
+        title: "The Mikhail Schweitzer Memorial Book Award",
+        role: "Recipient",
+        period: "2024",
+        description: "An award of books to a student who (like me) loves Russian literature and culture."
+      },
+      {
+        title: "The Bancroft Prize",
+        role: "Winner",
+        period: "2024",
+        description: (
+          <>
+            I won Amherst College's 2024 Public Speaking Competition with a speech on the dangers of AI and disinformation. Watch it{' '}
+            <a 
+              href="https://www.youtube.com/watch?v=5zo8vb3XSKk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ctp-blue hover:text-ctp-sapphire transition-colors"
+            >
+              here
+            </a>
+            .
+          </>
+        )
+      } 
+    ]
   }
 ];
 
@@ -227,7 +241,9 @@ const Experience: React.FC = () => {
         <h2 className="text-3xl font-bold text-ctp-text mb-12 text-center">
           Professional Journey
         </h2>
-        <div className="relative">
+
+        {/* Desktop Timeline (hidden on small screens) */}
+        <div className="relative hidden md:block">
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-ctp-surface1" />
           
@@ -284,10 +300,80 @@ const Experience: React.FC = () => {
           </div>
         </div>
 
+        {/* Mobile Timeline (shown only on small screens) */}
+        <div className="md:hidden">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative">
+              {/* Timeline line */}
+              <div className="absolute left-8 top-0 bottom-0 w-px bg-ctp-surface1" />
+              
+              {/* Timeline entries */}
+              <div className="space-y-8">
+                {experiences.map((exp, index) => {
+                  const Icon = exp.icon || Briefcase;
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className="relative"
+                    >
+                      <div className="flex gap-4">
+                        {/* Year badge */}
+                        <div className="flex items-center w-16 justify-center shrink-0">
+                          <div className="flex items-center gap-2 text-ctp-blue flex-col">
+                            <Calendar className="w-5 h-5" />
+                            <span className="text-sm font-medium whitespace-nowrap">{exp.year}</span>
+                          </div>
+                        </div>
+
+                        {/* Content card */}
+                        <div className="flex-1 bg-ctp-base p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
+                          <div className="flex items-center gap-2 mb-3">
+                            <Icon className="text-ctp-blue shrink-0" size={20} />
+                            <h3 className="text-lg font-semibold text-ctp-text">
+                              {exp.role}
+                            </h3>
+                          </div>
+                          <div className="flex items-center gap-2 mb-3">
+                            <MapPin className="text-ctp-blue shrink-0" size={16} />
+                            <p className="text-ctp-subtext0 text-sm">
+                              {exp.location}
+                            </p>
+                          </div>
+                          <p className="text-ctp-mauve font-medium mb-3">
+                            {exp.company}
+                          </p>
+                          <p className="text-ctp-subtext1 leading-relaxed text-sm">
+                            {exp.description}
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-xl mx-auto my-24">
+          <div className="flex items-center gap-4">
+            <div className="flex-1 h-px bg-ctp-surface1" />
+            <div className="w-2 h-2 rounded-full bg-ctp-surface1" />
+            <div className="w-3 h-3 rounded-full bg-ctp-surface1" />
+            <div className="w-2 h-2 rounded-full bg-ctp-surface1" />
+            <div className="flex-1 h-px bg-ctp-surface1" />
+          </div>
+        </div>
+
         {/* Additional Activities */}
-        <div className="mt-24">
+        <div className="mt-8">
           <h3 className="text-2xl font-bold text-ctp-text mb-12 text-center">
-            Additional Activities
+            Other Stuff
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {additionalActivities.map((section, sectionIndex) => (
@@ -306,11 +392,11 @@ const Experience: React.FC = () => {
                       className="bg-ctp-base p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
                     >
                       <div className="flex flex-col">
-                        <div className="flex justify-between items-start mb-2">
+                        <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
                           <h5 className="text-lg font-semibold text-ctp-text">
                             {item.title}
                           </h5>
-                          <span className="text-sm text-ctp-subtext0 whitespace-nowrap ml-2">
+                          <span className="text-sm text-ctp-subtext0">
                             {item.period}
                           </span>
                         </div>

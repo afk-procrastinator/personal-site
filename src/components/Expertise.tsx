@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Book, Lightbulb, Shield, Search } from 'lucide-react';
+import { Brain, Book, Lightbulb, Shield, Search, Flag } from 'lucide-react';
 
 const areasOfExpertise = [
   {
     title: 'AI Policy & Ethics',
-    description: 'Analyzing governance frameworks and ethical implications of artificial intelligence systems, with focus on alignment and regulatory challenges.',
+    description: 'AI is a powerful tool, but it also comes with great responsibility. I balance the need for innovation with the need for ethical considerations.',
     icon: Brain
   },
   {
     title: 'Political Philosophy',
-    description: 'Exploring the intersection of technology and political theory, particularly through the lens of classical philosophers and modern governance.',
+    description: 'I love philosophy. I explore the intersection of technology and political theory, particularly through the lens of classical philosophers and modern governance.',
     icon: Book
   },
   {
@@ -20,13 +20,18 @@ const areasOfExpertise = [
   },
   {
     title: 'National Security',
-    description: 'Analyzing defense innovation and critical technologies in the context of great power competition and national security strategy.',
+    description: 'Military and national security have powered technical development throughout history. I explore the intersection of technology and national security.',
     icon: Shield
   },
   {
     title: 'Research & Analysis',
     description: 'Conducting in-depth research on complex policy issues, utilizing both qualitative and quantitative methodologies.',
     icon: Search
+  }, 
+  {
+    title: 'Russian Studies',
+    description: 'I have a deep understanding of the Russian political and cultural landscape — both from my upbringing and my research.',
+    icon: Flag
   }
 ];
 

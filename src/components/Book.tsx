@@ -48,10 +48,10 @@ export function Book({ book }: BookProps) {
           {book.title}
         </h3>
         <p className="text-sm text-ctp-subtext0 mb-2">
-          {book.authors.join(', ')}
+          {book.authors.join(', ')}, {book.yearPublished}
         </p>
         <p className="text-sm text-ctp-subtext1">
-          Read in {formatDate(book.dateRead)}
+          Read in <span className="font-bold">{formatDate(book.dateRead)}</span>
         </p>
       </div>
     </motion.div>

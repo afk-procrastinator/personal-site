@@ -30,7 +30,7 @@ export const books: BookEntry[] = [
     authors: ["Marcus Aurelius"],
     coverImage: "https://m.media-amazon.com/images/I/81DFDGzHZqL._AC_UF894,1000_QL80_.jpg",
     yearPublished: 2006,
-    dateRead: "2024-10-01"
+    dateRead: "2024-12-03"
   },
   {
     isbn: "978-0-374-60973-3",

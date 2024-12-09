@@ -23,8 +23,10 @@ const technicalSkills: TechnicalSkillsType = {
   'Software': {
     'Excel': 90,
     'GIS': 80,
-    'Office Suite': 70,
+    'Microsoft Office Suite': 70,
     'Adobe Suite': 85,
+    'Swoogo': 90,
+    'Canva': 80,
   },
   'Soft Skills': {
     'Communication': 90,
@@ -43,9 +45,9 @@ const Skills = () => {
   return (
     <section className="py-20 bg-ctp-surface0 transition-colors duration-200">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-ctp-text mb-8 text-center">
+        <h1 className="text-3xl font-bold text-ctp-text mb-8 text-center">
           Skills & Expertise
-        </h2>
+        </h1>
         <div className="max-w-5xl mx-auto flex gap-8">
           <div className="w-2/3">
             <div className="flex gap-4 mb-8">
@@ -90,13 +92,13 @@ const Skills = () => {
           <div className="w-1/3">
             <p className="text-ctp-subtext1 leading-relaxed">
               {selectedCategory === 'Technical' && (
-                "Proficient in modern development technologies and programming languages, with a focus on Python and web development. Experienced in containerization and automation."
+                "Back in the day, I wanted to go into tech. Didn't go that route, but I'm proficient in modern development technologies and programming languages, with a focus on Python and web development. Experienced in containerization and automation. I'm also a big fan of prompt engineering."
               )}
               {selectedCategory === 'Software' && (
-                "Skilled in data analysis tools and professional software suites, with expertise in Excel, GIS systems, and creative applications."
+                "I'm a sucker for knowing software inside and out. I'm skilled in data analysis tools and professional software suites, with expertise in Excel, GIS systems, and creative applications."
               )}
               {selectedCategory === 'Soft Skills' && (
-                "Strong interpersonal and organizational abilities, with proven experience in research, writing, and event management. Excellence in team collaboration and adaptability."
+                "Soft skills are just as important as hard skills. I'm a strong communicator, event manager, and team player. I'm also a quick learner and adapt to new situations easily."
               )}
             </p>
           </div>

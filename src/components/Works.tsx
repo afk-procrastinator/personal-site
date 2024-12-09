@@ -75,7 +75,7 @@ const Works: React.FC = () => {
                   className="inline-flex items-center px-4 py-2 rounded-lg bg-ctp-mauve/10 hover:bg-ctp-mauve/20 text-ctp-mauve transition-colors"
                 >
                   <Download size={18} className="mr-2" />
-                  Download Paper
+                  Download
                 </a>
               </div>
             </motion.div>
