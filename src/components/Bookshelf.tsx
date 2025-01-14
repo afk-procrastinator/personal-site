@@ -55,7 +55,7 @@ export function Bookshelf() {
           </blockquote>
 
           <p className="text-ctp-subtext0">
-            I think you can tell a lot about a person by what they read. So, in the name of transparency, here are all the things I read - books, long form blog posts/essays, and other things. This currently only has 2024, but I'll be adding more as I read them (and 2023, when I have the chance).
+            I think you can tell a lot about a person by what they read. So, in the name of transparency, here are all the things I read - books, long form blog posts/essays, and other things.
           </p>
         </motion.div>
       </div>

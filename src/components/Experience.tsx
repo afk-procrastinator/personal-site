@@ -24,7 +24,7 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    year: "2024 - 2025",
+    year: "2024 - Current",
     role: "Joseph S. Nye Jr. Intern",
     company: "Center for a New American Security",
     location: "Washington, D.C.",

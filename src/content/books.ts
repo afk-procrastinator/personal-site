@@ -9,6 +9,22 @@ export interface BookEntry {
 
 export const books: BookEntry[] = [
   {
+    isbn: "978-0593734223",
+    title: "Nexus",
+    authors: ["Yuval Noah Harari"],
+    coverImage: "https://m.media-amazon.com/images/I/71l4l6o2drL.jpg",
+    yearPublished: 2024,
+    dateRead: "2025-01-03"
+  },  
+  {
+    isbn: "9781501144325",
+    title: "Why We Sleep",
+    authors: ["Matthew Walker"],
+    coverImage: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501144325/why-we-sleep-9781501144325_hr.jpg",
+    yearPublished: 2018,
+    dateRead: "2024-12-20"
+  },  
+  {
     isbn: "9780374275631",
     title: "Thinking, Fast and Slow",
     authors: ["Daniel Kahneman"],
