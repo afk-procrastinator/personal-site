@@ -18,13 +18,13 @@ const Hero: React.FC = () => {
             <div className="md:w-1/2 relative">
               <div className="absolute inset-0 -m-12">
                 {/* Core blur area */}
-                <div className="absolute inset-[20%] backdrop-blur-md" />
+                <div className="absolute inset-[20%] backdrop-blur-md bg-ctp-base/30" />
                 {/* Intermediate blur layers */}
-                <div className="absolute inset-[15%] backdrop-blur-[8px]" />
-                <div className="absolute inset-[10%] backdrop-blur-[6px]" />
-                <div className="absolute inset-[5%] backdrop-blur-[4px]" />
+                <div className="absolute inset-[15%] backdrop-blur-[8px] bg-ctp-base/25" />
+                <div className="absolute inset-[10%] backdrop-blur-[6px] bg-ctp-base/20" />
+                <div className="absolute inset-[5%] backdrop-blur-[4px] bg-ctp-base/15" />
                 {/* Edge blur */}
-                <div className="absolute inset-0 backdrop-blur-[2px]" />
+                <div className="absolute inset-0 backdrop-blur-[2px] bg-ctp-base/10" />
               </div>
               <div className="relative">
                 <HeroContent />

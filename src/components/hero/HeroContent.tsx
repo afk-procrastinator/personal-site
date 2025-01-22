@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Linkedin, Github, BookOpen } from 'lucide-react';
+import { FileText, Linkedin, Github, BookOpen, Newspaper } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 
@@ -103,6 +103,19 @@ const HeroContent = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-ctp-sapphire/0 via-white/25 to-ctp-sapphire/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
             <Linkedin className="w-6 h-6 text-ctp-base" />
             <span className="text-base font-medium text-ctp-base">LinkedIn</span>
+          </a>
+        </Tooltip>
+
+        <Tooltip text="Read my blog">
+          <a
+            href="https://blog.spencermichaels.ai/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-ctp-lavender rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-ctp-lavender/25"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-ctp-lavender/0 via-white/25 to-ctp-lavender/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
+            <Newspaper className="w-6 h-6 text-ctp-base" />
+            <span className="text-base font-medium text-ctp-base">Blog</span>
           </a>
         </Tooltip>
 

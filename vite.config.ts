@@ -7,4 +7,13 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  server: {
+    proxy: {
+      // Redirect all 404s to index.html for SPA routing
+      '*': {
+        target: '/',
+        rewrite: () => '/index.html'
+      }
+    }
+  },
 });
