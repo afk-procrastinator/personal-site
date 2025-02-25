@@ -9,7 +9,8 @@ import {
   Users, 
   Newspaper, 
   Globe,
-  Calendar
+  Calendar,
+  FileText
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -24,7 +25,28 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    year: "2024 - Current",
+    year: "2025 - Present",
+    role: "Defense Content Writer",
+    company: "Obviant",
+    location: "Alexandria, VA",
+    description: (
+      <>
+        Write data-driven content analyzing defense acquisition trends and program office innovations for{' '}
+        <a 
+          href="https://www.obviant.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-ctp-blue hover:text-ctp-sapphire transition-colors"
+        >
+        Obviant
+        </a>
+        , leveraging their platform and data to produce compelling narratives for the defense technology community.
+      </>
+    ),
+    icon: FileText
+  },
+  {
+    year: "2024 - Present",
     role: "Joseph S. Nye Jr. Intern",
     company: "Center for a New American Security",
     location: "Washington, D.C.",
@@ -238,7 +260,7 @@ const Experience: React.FC = () => {
   return (
     <section className="py-20 bg-ctp-surface0 transition-colors duration-200">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-ctp-text mb-12 text-center">
+        <h2 className="text-3xl font-bold text-ctp-text mb-6 text-center">
           Professional Journey
         </h2>
 
@@ -258,11 +280,11 @@ const Experience: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="relative mb-16"
+                  className="relative mb-2"
                 >
                   <div className={`flex items-center justify-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                     <div className="w-[calc(50%-4rem)] px-4">
-                      <div className="bg-ctp-base p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
+                      <div className="bg-ctp-base p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
                         <div className="flex items-center gap-2 mb-3">
                           <Icon className="text-ctp-blue" size={20} />
                           <h3 className="text-xl font-semibold text-ctp-text">
@@ -318,7 +340,7 @@ const Experience: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 }}
-                      className="relative"
+                      className="relative mb-8"
                     >
                       <div className="flex gap-4">
                         {/* Year badge */}
@@ -330,7 +352,7 @@ const Experience: React.FC = () => {
                         </div>
 
                         {/* Content card */}
-                        <div className="flex-1 bg-ctp-base p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
+                        <div className="flex-1 bg-ctp-base p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
                           <div className="flex items-center gap-2 mb-3">
                             <Icon className="text-ctp-blue shrink-0" size={20} />
                             <h3 className="text-lg font-semibold text-ctp-text">
@@ -360,7 +382,7 @@ const Experience: React.FC = () => {
         </div>
 
         {/* Divider */}
-        <div className="max-w-xl mx-auto my-24">
+        <div className="max-w-xl mx-auto my-16">
           <div className="flex items-center gap-4">
             <div className="flex-1 h-px bg-ctp-surface1" />
             <div className="w-2 h-2 rounded-full bg-ctp-surface1" />
@@ -372,13 +394,13 @@ const Experience: React.FC = () => {
 
         {/* Additional Activities */}
         <div className="mt-8">
-          <h3 className="text-2xl font-bold text-ctp-text mb-12 text-center">
+          <h3 className="text-2xl font-bold text-ctp-text mb-8 text-center">
             Other Stuff
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {additionalActivities.map((section, sectionIndex) => (
               <div key={sectionIndex} className="space-y-6">
-                <h4 className="text-xl font-semibold text-ctp-blue mb-6 text-center">
+                <h4 className="text-xl font-semibold text-ctp-blue mb-4 text-center">
                   {section.category}
                 </h4>
                 <div className="space-y-4">
@@ -389,7 +411,7 @@ const Experience: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: itemIndex * 0.1 + sectionIndex * 0.2 }}
-                      className="bg-ctp-base p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                      className="bg-ctp-base p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
                     >
                       <div className="flex flex-col">
                         <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
