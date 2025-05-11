@@ -26,7 +26,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     year: "2025 - Present",
-    role: "Defense Content Writer",
+    role: "Analyst Intern",
     company: "Obviant",
     location: "Alexandria, VA",
     description: (
@@ -52,7 +52,7 @@ const experiences: Experience[] = [
     location: "Washington, D.C.",
     description: (
       <>
-        Conducted research on U.S. foreign policy and international security issues at{' '}
+        Conducting research on U.S. foreign policy and international security issues at{' '}
         <a 
           href="https://www.cnas.org/next-generation-programs/internships"
           target="_blank"

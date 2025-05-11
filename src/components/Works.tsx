@@ -14,23 +14,23 @@ const works: Work[] = [
   {
     title: "Squaring the Circle",
     type: "Senior Honors Thesis",
-    description: "Examining AI alignment through Hobbes' political philosophy, exploring parallels between artificial personhood in states, corporations, and AI.",
+    description: "Examining AI alignment through Hobbes' political philosophy.",
     image: "/ai-thesis.jpg",
     pdfLink: "/Thesis.pdf"
   },
   {
     title: "Constructing an Icon",
     type: "Conference Paper",
-    description: "Analyzing Moscow's Dom Narkomfin as a lens for understanding Russia's relationship with avant-garde architecture and social housing.",
+    description: "Analyzing Moscow's Dom Narkomfin as a lens for understanding Russia's relationship with architecture.",
     image: "/narkomfin.jpg",
     pdfLink: "/ConstructingIcon.pdf"
   },
   {
-    title: "A Multipolar Balancing Act",
-    type: "Independent Research",
-    description: "Comparing US and EU strategic approaches to China through analysis of their key policy documents.",
-    image: "/multipolar.jpg",
-    pdfLink: "/MultipolarBalancing.pdf"
+    title: "Five Objectives to Guide U.S. AI Diffusion",
+    type: "Reply to Request for Comment",
+    description: "Comments on the Framework for AI Diffusion",
+    image: "/diffusion.jpeg",
+    pdfLink: "https://www.cnas.org/publications/commentary/five-objectives-to-guide-u-s-ai-diffusion"
   }
 ];
 

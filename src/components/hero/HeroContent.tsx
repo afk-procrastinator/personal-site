@@ -82,17 +82,6 @@ const HeroContent = () => {
           </a>
         </Tooltip>
 
-        <Tooltip text="Check out what I'm reading">
-          <Link
-            to="/bookshelf"
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-ctp-mauve rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-ctp-mauve/25"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-ctp-mauve/0 via-white/25 to-ctp-mauve/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
-            <BookOpen className="w-6 h-6 text-ctp-base" />
-            <span className="text-base font-medium text-ctp-base">Bookshelf</span>
-          </Link>
-        </Tooltip>
-
         <Tooltip text="Connect with me on LinkedIn">
           <a
             href="https://linkedin.com/in/spencer-michaels/"
@@ -103,19 +92,6 @@ const HeroContent = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-ctp-sapphire/0 via-white/25 to-ctp-sapphire/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
             <Linkedin className="w-6 h-6 text-ctp-base" />
             <span className="text-base font-medium text-ctp-base">LinkedIn</span>
-          </a>
-        </Tooltip>
-
-        <Tooltip text="Read my blog">
-          <a
-            href="https://blog.spencermichaels.ai/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-ctp-lavender rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-ctp-lavender/25"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-ctp-lavender/0 via-white/25 to-ctp-lavender/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
-            <Newspaper className="w-6 h-6 text-ctp-base" />
-            <span className="text-base font-medium text-ctp-base">Blog</span>
           </a>
         </Tooltip>
 
