@@ -1,11 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Book, Lightbulb, Shield, Search, Flag } from 'lucide-react';
+import { Brain, Book, Shield, Search, Flag, Cpu, Binary} from 'lucide-react';
 
 const areasOfExpertise = [
   {
-    title: 'AI Policy & Ethics',
-    description: 'AI is a powerful tool, but it also comes with great responsibility. I balance the need for innovation with the need for ethical considerations.',
+    title: 'National Security',
+    description: 'Military and national security have powered technical development throughout history. I explore the intersection of technology and national security.',
+    icon: Shield
+  },
+  {
+    title: 'Compute Governance',
+    description: 'Compute is the backbone of the AI revolution. How we regulate, export, and use it will be a key determinant of the U.S.\' AI advantage.',
+    icon: Cpu
+  },
+  {
+    title: 'AI Policy',
+    description: 'The emerging challenges of AI policy are complex and require a multi-disciplinary approach. I explore the intersection of technology and policy.',
     icon: Brain
   },
   {
@@ -14,19 +24,9 @@ const areasOfExpertise = [
     icon: Book
   },
   {
-    title: 'Technology Strategy',
-    description: 'Developing strategic approaches to emerging technologies, focusing on innovation policy and technological competition between nations.',
-    icon: Lightbulb
-  },
-  {
-    title: 'National Security',
-    description: 'Military and national security have powered technical development throughout history. I explore the intersection of technology and national security.',
-    icon: Shield
-  },
-  {
-    title: 'Research & Analysis',
-    description: 'Conducting in-depth research on complex policy issues, utilizing both qualitative and quantitative methodologies.',
-    icon: Search
+    title: 'Computer Science',
+    description: 'I believe in understanding and using the technologies I\'m developing policy for. I love learning and building new things.',
+    icon: Binary
   }, 
   {
     title: 'Russian Studies',

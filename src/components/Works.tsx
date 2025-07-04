@@ -19,18 +19,18 @@ const works: Work[] = [
     pdfLink: "/Thesis.pdf"
   },
   {
-    title: "Constructing an Icon",
-    type: "Conference Paper",
-    description: "Analyzing Moscow's Dom Narkomfin as a lens for understanding Russia's relationship with architecture.",
-    image: "/narkomfin.jpg",
-    pdfLink: "/ConstructingIcon.pdf"
-  },
-  {
     title: "Five Objectives to Guide U.S. AI Diffusion",
     type: "Reply to Request for Comment",
     description: "Comments on the Framework for AI Diffusion",
     image: "/diffusion.jpeg",
     pdfLink: "https://www.cnas.org/publications/commentary/five-objectives-to-guide-u-s-ai-diffusion"
+  },
+  {
+    title: "Securing America’s AI Future: Federal Research and Development Priorities",
+    type: "Reply to Request for Comment",
+    description: "Comments on the AI R&D Strategic Plan",
+    image: "/chip.jpg",
+    pdfLink: "https://www.cnas.org/publications/commentary/securing-americas-ai-future-federal-research-and-development-priorities"
   }
 ];
 

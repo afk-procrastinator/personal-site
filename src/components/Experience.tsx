@@ -10,7 +10,8 @@ import {
   Newspaper, 
   Globe,
   Calendar,
-  FileText
+  FileText,
+  Atom
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -26,6 +27,18 @@ interface Experience {
 const experiences: Experience[] = [
   {
     year: "2025 - Present",
+    role: "Contract Research Assistant",
+    company: "Center for a New American Security",
+    location: "Washington, D.C.",
+    description: (
+      <>
+        Developing a report on pro-innovation policies in the U.S. to enable government preparedness and response to emerging AI national security risks.  
+      </>
+    ),
+    icon: Atom
+  },
+  {
+    year: "2025",
     role: "Analyst Intern",
     company: "Obviant",
     location: "Alexandria, VA",
@@ -115,64 +128,6 @@ const experiences: Experience[] = [
       </>
     ),
     icon: Building2
-  },
-  {
-    year: "2023 — 2024",
-    role: "Board Member",
-    company: "AI in Liberal Arts Initiative",
-    location: "Amherst, MA",
-    description: "Led an initiative promoting discussion, awareness, and engagement in the role of AI in liberal arts education. Advised faculty members on campus-wide guidelines, regulations, and approaches to AI in the classroom.",
-    icon: GraduationCap
-  },
-  {
-    year: "Summer 2022",
-    role: "Schupf Fellow",
-    company: "Amherst College Schupf Fellowship Program",
-    location: "Amherst, MA",
-    description: "Independently researched and produced weekly reports on topics in international relations and politics; warfare development; and international humanitarian law. Located primary sources both online and in archives to support arguments and analyses.",
-    icon: BookOpen
-  },
-  {
-    year: "2022 - 2024",
-    role: "Research Assistant",
-    company: "Amherst College Russian Center",
-    location: "Amherst, MA",
-    description: (
-      <>
-        Conducted research at the{' '}
-        <a 
-          href="https://www.amherst.edu/academiclife/departments/russian/acrc"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-ctp-blue hover:text-ctp-sapphire transition-colors"
-        >
-          Center for Russian Culture
-        </a>
-        {' '}on Russian literature and cultural history, focusing on the intersection of technology and society in Soviet and post-Soviet contexts. Analyzed primary sources and contributed to academic publications.
-      </>
-    ),
-    icon: BookOpen
-  },
-  {
-    year: "Summer 2021",
-    role: "Intern",
-    company: "The Moscow Times",
-    location: "Moscow, Russia",
-    description: (
-      <>
-        Provided editorial assistance at{' '}
-        <a 
-          href="https://www.themoscowtimes.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-ctp-blue hover:text-ctp-sapphire transition-colors"
-        >
-          The Moscow Times
-        </a>
-        , designed newsletters, edited podcasts, and wrote articles. Monitored breaking news of incidents, events, and topics of interest to quickly create engaging content for an international audience.
-      </>
-    ),
-    icon: Newspaper
   }
 ];
 
@@ -378,62 +333,6 @@ const Experience: React.FC = () => {
                 })}
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="max-w-xl mx-auto my-16">
-          <div className="flex items-center gap-4">
-            <div className="flex-1 h-px bg-ctp-surface1" />
-            <div className="w-2 h-2 rounded-full bg-ctp-surface1" />
-            <div className="w-3 h-3 rounded-full bg-ctp-surface1" />
-            <div className="w-2 h-2 rounded-full bg-ctp-surface1" />
-            <div className="flex-1 h-px bg-ctp-surface1" />
-          </div>
-        </div>
-
-        {/* Additional Activities */}
-        <div className="mt-8">
-          <h3 className="text-2xl font-bold text-ctp-text mb-8 text-center">
-            Other Stuff
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {additionalActivities.map((section, sectionIndex) => (
-              <div key={sectionIndex} className="space-y-6">
-                <h4 className="text-xl font-semibold text-ctp-blue mb-4 text-center">
-                  {section.category}
-                </h4>
-                <div className="space-y-4">
-                  {section.items.map((item, itemIndex) => (
-                    <motion.div
-                      key={itemIndex}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: itemIndex * 0.1 + sectionIndex * 0.2 }}
-                      className="bg-ctp-base p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-                    >
-                      <div className="flex flex-col">
-                        <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
-                          <h5 className="text-lg font-semibold text-ctp-text">
-                            {item.title}
-                          </h5>
-                          <span className="text-sm text-ctp-subtext0">
-                            {item.period}
-                          </span>
-                        </div>
-                        <p className="text-ctp-mauve text-sm mb-2">
-                          {item.role}
-                        </p>
-                        <p className="text-ctp-subtext1 text-sm leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
